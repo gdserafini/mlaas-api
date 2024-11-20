@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from http import HTTPStatus
+from app.user.controller import router as user_router
 
 
 app = FastAPI()
+app.include_router(user_router)
 
 
 class Root(BaseModel):
