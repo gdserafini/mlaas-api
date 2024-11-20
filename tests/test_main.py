@@ -9,4 +9,4 @@ client = TestClient(app)
 def test_root_should_return_ok():
     response = client.get("/")
     assert response.status_code == HTTPStatus.OK
-    assert response.json() == {"Message": "Hello World"}
+    assert response.json() == {"message": "Hello World"}
