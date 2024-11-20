@@ -9,6 +9,7 @@ app = FastAPI()
 class Root(BaseModel):
     message: str
 
+
 @app.get(
     path = '/',
     status_code=HTTPStatus.OK,
