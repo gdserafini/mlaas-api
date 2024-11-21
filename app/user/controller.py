@@ -2,6 +2,7 @@ from fastapi import APIRouter
 from http import HTTPStatus
 from app.user.user import UserSchema, UserSchemaResponse
 
+
 router = APIRouter()
 
 
