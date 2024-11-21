@@ -11,7 +11,7 @@ router = APIRouter()
     status_code=HTTPStatus.CREATED,
     response_model=UserSchemaResponse
 )
-def create_user(user: UserSchema):
+def create_user(user: UserSchema) -> UserSchemaResponse:
     return UserSchemaResponse(
         username=user.username,
         email=user.email,
