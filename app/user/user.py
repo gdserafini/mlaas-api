@@ -12,6 +12,14 @@ class UserSchema(BaseModel):
 
 
 class UserSchemaResponse(BaseModel):
+    id: int
     username: str
     email: str
+
+
+class UserSchemaResponseWMsg(UserSchemaResponse):
     message: str
+
+
+class UserDB(UserSchema):
+    id: int
